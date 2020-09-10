@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 70px;
+}
+
+table {
+  width: 100%;
+  border: solid thin;
+  border-collapse: collapse;
+}
+th.word{
+  width: 5%
+  vertical-align: middle;
+  border: solid thin;
+}
+
+th.docs {
+  width: 5%
+  vertical-align: middle;
+  border: solid thin;
+}
+
+th.sentences {
+  width: 90%
+}
+
+table thead th { border-bottom: solid thin; }
+
+td {
+  vertical-align:top;
+  border-left:solid thin;
+}
+</style>
+</head>
+
+<body>
+<h1>First Text Analysis Python Project</h1>
+<p>selected words: {{words}}</p>
+
+{% for di in displ_i %}
+	<table>
+	  <thead>
+	    <tr>
+	      <th class="word">Word (Total Occurrences)</th>
+	      <th class="docs">Documents</th>
+	      <th class="sentences">Sentences containing the word</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>{{di[0]}} ({{di[1]}})</td>
+	      <td>
+			{% for doc in di[2] %}
+				{{doc}}
+				<br>
+			{% endfor %}
+	      </td>
+	      <td>
+			{% for sent in di[3] %}
+				{{sent}}
+				<br>
+				<br>
+			{% endfor %}
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+	<br>
+	<br>
+{% endfor %}
+
+</body>
+</html>
