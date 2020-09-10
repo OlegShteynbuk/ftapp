@@ -1,20 +1,11 @@
 	  1. Introduction
-The goal of this project is to extract information from text documents by displaying a list of the most frequent words
-that fall under certain criteria, along with the document names and sentences where those words appear.
-This project could be used as a starting point for a text analysis project.
-The text samples are the beginnings of several chapters from Ulysses.
-The original project had different text samples which for whereas reasons we can't open source,
-and chapters from Ulysses were chosen because we are big Joyce fans.
+The goal of this project is to extract information from text documents by displaying a list of the most frequent words that fall under certain criteria, along with the document names and sentences where those words appear. This project could be used as a starting point for a text analysis project. The text samples are the beginnings of several chapters from Ulysses. The original project had different text samples which for whereas reasons we can't open source, and chapters from Ulysses were chosen because we are big Joyce fans.
 
 	2. Trade offs
-2.1 In this implementation the criteria for word selection will be nouns minus proper names. The words selection can be adjusted by modifying
-	the list of words that we do not want to select. After each run if you don't like the top choices just add them to the list.
-     Another approach could be to create a list of words that we want to select.
+2.1 In this implementation the criteria for word selection will be nouns minus proper names. The words selection can be  adjusted by modifying the list of words that we do not want to select. After each run if you don't like the top choices just add them to the list. Another approach could be to create a list of words that we want to select.
 2.2 There is a constant to limit the number of words to display.
 2.3 If html output selected(default) the output will be in the 'output' folder
-2.4 The program should have enough memory for the largest of the documents. There are various techniques to deal
-	with big files; processing big files is not implemented yet. Current implementation read all files into memory;
-	there are comments in the code how to change the code to keep in memory one file at a time.
+2.4 The program should have enough memory for the largest of the documents. There are various techniques to deal with big files; processing big files is not implemented yet. Current implementation read all files into memory; there are comments in the code how to change the code to keep in memory one file at a time.
 2.5 It is possible to trade speed for memory and vice versa, see comments in the code.
 
     	3, To run:
