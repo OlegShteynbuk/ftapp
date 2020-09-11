@@ -30,4 +30,4 @@ python -m pytest ftapp/tests/test_parse.py
 
 5. log files are in the working directory. Because the results can be displayed in the console there is no console logger.
 
-6. The program was tested on Linux with Python 3.7, nltk 3.5, jinja2 2.11, pytest 6.0, pyyaml 5.3; the console output was tested for Bash shell, and html output was tested with Chrome and Firefox.
+6. The program was tested on Linux with Python 3.7, nltk 3.5, jinja2 2.11, pytest 6.0, pyyaml 5.3; the console output was tested with Bash shell, and html output was tested with Chrome and Firefox.
