@@ -9,8 +9,9 @@ The goal of this project is to extract information from text documents by displa
 * It is possible to trade speed for memory and vice versa, see comments in the code.
 * Log files are in the working directory. Because the results can be displayed in the console there is no console logger.
 
-Prerequisites
-The program was tested on Linux with Python 3.7, nltk 3.5, jinja2 2.11, pytest 6.0, pyyaml 5.3; the console output was tested with Bash shell, and html output was tested with Chrome and Firefox.
+## Prerequisites
+* The program was tested on Linux with Python 3.7, nltk 3.5, jinja2 2.11, pytest 6.0, pyyaml 5.3.
+* The console output was tested with Bash shell, and html output was tested with Chrome and Firefox.
 
 ## Installing
 * create directory and unzip or clone the project, it will be the project root directory
