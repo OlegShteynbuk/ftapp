@@ -13,22 +13,21 @@ Prerequisites
 The program was tested on Linux with Python 3.7, nltk 3.5, jinja2 2.11, pytest 6.0, pyyaml 5.3; the console output was tested with Bash shell, and html output was tested with Chrome and Firefox.
 
 ## Installing
-3.1 create directory and unzip or clone the project, it will be the project root directory
-3.2 cd to the project root directory.
-3.3 create a virtual environment from conda-req.txt, which is located in the requirements directory;
-    conda-req.txt was created by conda.
-3.4. init nltk installation, this step is optional depending on nltk installation
+* create directory and unzip or clone the project, it will be the project root directory
+* cd to the project root directory.
+* create a virtual environment from conda-req.txt, which is located in the requirements directory; conda-req.txt was created by conda.
+* init nltk installation, this step is optional depending on nltk installation
 python ./ftapp/parsing/init_installation.py
 
 ## Running
-python -m ftapp.parsing.process
-  optional arguments:
-  	-h, --help  (show help message)
-  	-c  (output to the console, defaults to html output)
+	python -m ftapp.parsing.process
+	  optional arguments:
+	  	-h, --help  (show help message)
+	  	-c  (output to the console, defaults to html output)
 
 ## Running the tests
-python -m pytest ftapp/tests
-	or
-python -m pytest ftapp/tests/test_parse.py
+	python -m pytest ftapp/tests
+		or
+	python -m pytest ftapp/tests/test_parse.py
 
 
