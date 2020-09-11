@@ -8,22 +8,21 @@ The goal of this project is to extract information from text documents by displa
 2.4 The program should have enough memory for the largest of the documents. There are various techniques to deal with big files; processing big files is not implemented yet. Current implementation read all files into memory; there are comments in the code how to change the code to keep in memory one file at a time.
 2.5 It is possible to trade speed for memory and vice versa, see comments in the code.
 
-    	3, To run:
-1. create directory and unzip or clone the project, it will be the project root directory
-2. cd to the project root directory.
-3. create a virtual environment from conda-req.txt, which is located in the requirements directory;
+    	3. Installing
+3.1 create directory and unzip or clone the project, it will be the project root directory
+3.2 cd to the project root directory.
+3.3 create a virtual environment from conda-req.txt, which is located in the requirements directory;
     conda-req.txt was created by conda.
-
-4. init nltk installation, this step is optional depending on nltk installation
+3.4. init nltk installation, this step is optional depending on nltk installation
 python ./ftapp/parsing/init_installation.py
 
-3.	run
+		4. Running
 python -m ftapp.parsing.process
   optional arguments:
   	-h, --help  (show help message)
   	-c  (output to the console, defaults to html output)
 
-4.	run tests
+4.	Running the tests
 python -m pytest ftapp/tests
 	or
 python -m pytest ftapp/tests/test_parse.py
