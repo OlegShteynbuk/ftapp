@@ -18,7 +18,8 @@ The goal of this project is to extract information from text documents by displa
 * cd to the project root directory.
 * create a virtual environment from conda-req.txt, which is located in the requirements directory; conda-req.txt was created by conda.
 * init nltk installation, this step is optional depending on nltk installation
-	python ./ftapp/parsing/init_installation.py
+
+    python ./ftapp/parsing/init_installation.py
 
 ## Running
 	python -m ftapp.parsing.process
